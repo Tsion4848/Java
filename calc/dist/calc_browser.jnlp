@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="calc_browser.jnlp">
+  <information>
+    <title>calc</title>
+    <vendor>hp</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="calc.jar" size="4142" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="calc.Calc"  name="calc" >
+  </applet-desc>
+  <update check="always"/>
+</jnlp>

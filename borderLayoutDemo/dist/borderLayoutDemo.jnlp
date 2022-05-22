@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="borderLayoutDemo.jnlp">
+  <information>
+    <title>borderLayoutDemo</title>
+    <vendor>hp</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="borderLayoutDemo.jar" size="2917" download="eager" />
+  </resources>
+  <application-desc main-class="borderlayoutdemo.BorderLayoutDemo"  name="borderLayoutDemo" >
+  </application-desc>
+  <update check="always"/>
+</jnlp>

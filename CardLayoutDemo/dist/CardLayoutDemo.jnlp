@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="CardLayoutDemo.jnlp">
+  <information>
+    <title>CardLayoutDemo</title>
+    <vendor>hp</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="CardLayoutDemo.jar" size="4067" download="eager" />
+  </resources>
+  <application-desc main-class="cardlayoutdemo.CardLayoutDemo"  name="CardLayoutDemo" >
+  </application-desc>
+  <update check="always"/>
+</jnlp>
