@@ -29,7 +29,7 @@ class Q {
             }
         }
         this.n = n;
-        valueSet = false;
+        valueSet = true;
         System.out.println("put: " + n);
         notify();
     }

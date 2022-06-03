@@ -38,18 +38,18 @@ public class FileOutputstreamBinary {
             fin = new FileInputStream("C:\\Users\\hp\\Desktop\\" + name + ".dat");
             in = new DataInputStream(fin);
             
-             while((i = fin.read()) != -1){
-                 if (i == 10){
-                     System.out.println();
-                 }
-                 System.out.print((char) i);
-                 }
+//             while((i = fin.read()) != -1){
+//                 if (i == 10){
+//                     System.out.println();
+//                 }
+//                 System.out.print((char) i);
+//                 }
 
-//            do{
-//            str+= in.readUTF();
-//            System.out.println(str);
-//            }while (str.compareTo("stop") == 0);
-//            
+            do{
+            str+= in.readUTF();
+            System.out.println(str);
+            }while (str.compareTo("stop") == 0);
+            
 //            
             in.close();
         }

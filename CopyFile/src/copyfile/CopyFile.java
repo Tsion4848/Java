@@ -17,15 +17,22 @@ public class CopyFile {
             
             int i;
             FileInputStream fin = new FileInputStream("C:\\Users\\hp\\Desktop\\" + name + ".txt");
+            
             while((i = fin.read()) != -1){
                  pw.write((char) i);
+                 pw.flush();
+                 System.out.println("copied successfully");
+                 pw.close();
+                 fin.close();
                  }
 //            while (re.hasNext()){
 //                str = re.nextLine();
 //                pw.println(str);
+//                pw.flush();
+//                pw.close();
+//                //System.out.println("copied successfully");
 //            }
-            fin.close();
-            pw.close();
+            
         }
         catch (IOException exc){
             System.out.println(exc.getMessage());

@@ -14,15 +14,48 @@ public class DataBase {
             con = DriverManager.getConnection("jdbc:derby://localhost:1527/MyDataBase" , "tsion", "zionzee");
             stmt = con.createStatement();
             rs = stmt.executeQuery(query);
-            md = rs.getMetaData();
             
-             int n = md.getColumnCount();
-            
-            for (int i = 1 ; i <= 4 ; i++){
-                System.out.print(md.getColumnName(i) + "\t");
-            }
-            System.out.println();
             while(rs.next()){
+                for (int i = 1 ; i <= 4 ; i++){
+                System.out.print(rs.getObject(i) + "\t");
+            }
+           System.out.println();
+        
+            }
+        }
+        catch(SQLException e){
+            e.printStackTrace();
+        }      
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+            //md = rs.getMetaData();
+            
+             //int n = md.getColumnCount();
+            
+//            for (int i = 1 ; i <= 4 ; i++){
+//                System.out.print(md.getColumnName(i) + "\t");
+//            }
+//            System.out.println();
+             
+    
 //                int id = rs.getInt("ID");
 //                String name = rs.getString("Name");
 //                Date da = rs.getDate("DOB");
@@ -32,17 +65,7 @@ public class DataBase {
 
 //or 
 
-            for (int i = 1 ; i <= 4 ; i++){
-                System.out.print(rs.getObject(i) + "\t");
-            }
-           System.out.println();
-        
-            }
-        }
-        catch(SQLException e){
-            e.printStackTrace();
-        }
-        
+            
     }
     
 }
